@@ -1,0 +1,143 @@
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(15, 15, 15);
+}
+
+.header-bar {
+  position: fixed;
+  display: flex;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 55px;
+}
+
+.left-header,
+.right-header{
+  width: 200px;
+}
+
+.center-header {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.search-things{
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 700px;
+}
+
+.search-bar {
+  color: rgb(200,200,200);
+  background-color: rgb(15, 15, 15);
+  border-radius: .5px;
+  border-color: #0b0b0b;
+  border-style: solid;
+  margin-left: 50px;
+  padding-left: 20px;
+  height: 100%;
+  width: 650px;
+  font-size: 16px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 0; 
+  border-bottom-right-radius: 0;
+}
+
+.search-bar:focus{
+  border-color: #245c84;
+  outline: none;
+}
+
+.search-btn{
+  background-color: rgb(30, 30, 30);
+  border: .5px;
+  border-radius: 260px;
+  height: 100%;
+  width: 75px;
+  margin-right: 10px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 50px; 
+  border-bottom-right-radius: 50px;
+}
+
+.lupa{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lupa-icon{
+  width: 25px;
+  height: 25px;
+}
+
+.search-btn:hover .msg{
+  opacity: 1;
+}
+
+.mic-btn{
+
+}
+
+.left-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: -20px;
+}
+
+.settings-icon {
+  width: 100%;
+  height: 40px;
+  padding-bottom: 2px;
+  border-radius: 100px;
+  transition: background-color 0.15s;
+}
+
+.settings-icon:hover {
+  background-color: rgba(255, 255, 255, 0.10);
+}
+
+.right-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.dots-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.dots:hover .msg{
+  opacity: 1;
+}
+
+.msg {
+  color: white;
+  position: absolute;
+  background-color: gray;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  bottom: -50;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+}
